@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -13,7 +14,9 @@ export default function Hero() {
         </div>
         <div className="flex-grow basis-1/3">
           <div className="w-[300px] overflow-hidden rounded-4xl border-2 border-border shadow-shadow aspect-4/3">
-              <img
+              <Image
+                width={300}
+                height={400}
                 src="/steve.jpg"
                 alt="image"
                 className="w-full h-full object-cover scale-[2] origin-[50%_10%]"
