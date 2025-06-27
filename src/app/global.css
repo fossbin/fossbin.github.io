@@ -64,6 +64,7 @@
   --shadow-shadow: var(--shadow);
   --font-weight-base: 500;
   --font-weight-heading: 800;
+  --animate-blink: blink 1s step-start infinite;
 }
 
 .bg-grid {
@@ -71,6 +72,17 @@
     linear-gradient(to right, #00000010 1px, transparent 1px),
     linear-gradient(to bottom, #00000010 1px, transparent 1px);
   background-size: 80px 80px;
+}
+
+
+@keyframes blink {
+  0%,100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  
 }
 
 @layer base {
