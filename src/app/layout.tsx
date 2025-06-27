@@ -8,7 +8,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
     <html lang="en">
         <body className="bg-grid">
             <Navbar />
-            <main>{children}</main>
+            <main >{children}</main>
             <Footer />
         </body>
     </html>

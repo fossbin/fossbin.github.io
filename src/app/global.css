@@ -65,6 +65,9 @@
   --font-weight-base: 500;
   --font-weight-heading: 800;
   --animate-blink: blink 1s step-start infinite;
+
+  --animate-marquee: marquee 20s linear infinite;
+  --animate-marquee2: marquee2 20s linear infinite;
 }
 
 .bg-grid {
@@ -83,6 +86,24 @@
     opacity: 0;
   }
   
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+ 
+@keyframes marquee2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @layer base {
