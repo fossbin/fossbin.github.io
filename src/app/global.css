@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --background: oklch(96.22% 0.0569 95.61);
   --secondary-background: oklch(100% 0 0);
   --foreground: oklch(0% 0 0);
@@ -72,10 +75,9 @@
 
 @layer base {
   body {
-    @apply text-foreground font-base bg-background;
+    @apply font-sans text-foreground bg-background;
   }
-
-  h1, h2, h3, h4, h5, h6{
+  h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
   .font-outline-1 {
