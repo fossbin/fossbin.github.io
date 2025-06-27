@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-      <div className="flex justify-center min-h-screen">
+      <div className="flex justify-center items-start min-h-screen">
         <Hero/>
       </div>
   )
